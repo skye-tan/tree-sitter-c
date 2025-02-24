@@ -577,6 +577,7 @@ module.exports = grammar({
       '_Noreturn',
       'noreturn',
       '_Nonnull',
+      '_Linear',
       $.alignas_qualifier,
     ),
 
