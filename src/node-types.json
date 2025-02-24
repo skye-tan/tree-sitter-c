@@ -4236,6 +4236,10 @@
     "named": false
   },
   {
+    "type": "_Linear",
+    "named": false
+  },
+  {
     "type": "__alignof",
     "named": false
   },

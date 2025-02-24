@@ -4674,6 +4674,10 @@
         },
         {
           "type": "STRING",
+          "value": "_Linear"
+        },
+        {
+          "type": "STRING",
           "value": "noreturn"
         },
         {
