@@ -4666,15 +4666,11 @@
         },
         {
           "type": "STRING",
-          "value": "_Atomic"
+          "value": "_Linear"
         },
         {
           "type": "STRING",
           "value": "_Noreturn"
-        },
-        {
-          "type": "STRING",
-          "value": "_Linear"
         },
         {
           "type": "STRING",

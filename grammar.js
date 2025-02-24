@@ -573,11 +573,10 @@ module.exports = grammar({
       'restrict',
       '__restrict__',
       '__extension__',
-      '_Atomic',
+      '_Linear',
       '_Noreturn',
       'noreturn',
       '_Nonnull',
-      '_Linear',
       $.alignas_qualifier,
     ),
 

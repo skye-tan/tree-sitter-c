@@ -4220,7 +4220,7 @@
     "named": false
   },
   {
-    "type": "_Atomic",
+    "type": "_Linear",
     "named": false
   },
   {
@@ -4233,10 +4233,6 @@
   },
   {
     "type": "_Noreturn",
-    "named": false
-  },
-  {
-    "type": "_Linear",
     "named": false
   },
   {

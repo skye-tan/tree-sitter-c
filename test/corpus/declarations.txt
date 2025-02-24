@@ -715,7 +715,7 @@ extern "C" {
 Type qualifiers
 ================================================================================
 
-const _Atomic unsigned long int x = 5;
+const _Linear unsigned long int x = 5;
 restrict int y = 6;
 volatile int z = 7;
 constexpr int a = 8;
