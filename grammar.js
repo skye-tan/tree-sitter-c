@@ -278,6 +278,7 @@ module.exports = grammar({
     _type_definition_declarators: $ => commaSep1(field('declarator', $._type_declarator)),
 
     _declaration_modifiers: $ => choice(
+      $.linear_type_specifier,
       $.storage_class_specifier,
       $.type_qualifier,
       $.attribute_specifier,
@@ -410,25 +411,25 @@ module.exports = grammar({
     parenthesized_declarator: $ => prec.dynamic(PREC.PAREN_DECLARATOR, seq(
       '(',
       optional($.ms_call_modifier),
-      $._declarator,
+      field('declarator', $._declarator),
       ')',
     )),
     parenthesized_field_declarator: $ => prec.dynamic(PREC.PAREN_DECLARATOR, seq(
       '(',
       optional($.ms_call_modifier),
-      $._field_declarator,
+      field('declarator', $._field_declarator),
       ')',
     )),
     parenthesized_type_declarator: $ => prec.dynamic(PREC.PAREN_DECLARATOR, seq(
       '(',
       optional($.ms_call_modifier),
-      $._type_declarator,
+      field('declarator', $._type_declarator),
       ')',
     )),
     abstract_parenthesized_declarator: $ => prec(1, seq(
       '(',
       optional($.ms_call_modifier),
-      $._abstract_declarator,
+      field('declarator', $._abstract_declarator),
       ')',
     )),
 
@@ -552,6 +553,8 @@ module.exports = grammar({
       repeat($._block_item),
       '}',
     ),
+
+    linear_type_specifier: _ => "linear_type",
 
     storage_class_specifier: _ => choice(
       'extern',

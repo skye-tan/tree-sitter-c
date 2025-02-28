@@ -3101,6 +3101,10 @@
       "members": [
         {
           "type": "SYMBOL",
+          "name": "linear_type_specifier"
+        },
+        {
+          "type": "SYMBOL",
           "name": "storage_class_specifier"
         },
         {
@@ -3682,8 +3686,12 @@
             ]
           },
           {
-            "type": "SYMBOL",
-            "name": "_declarator"
+            "type": "FIELD",
+            "name": "declarator",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_declarator"
+            }
           },
           {
             "type": "STRING",
@@ -3715,8 +3723,12 @@
             ]
           },
           {
-            "type": "SYMBOL",
-            "name": "_field_declarator"
+            "type": "FIELD",
+            "name": "declarator",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_field_declarator"
+            }
           },
           {
             "type": "STRING",
@@ -3748,8 +3760,12 @@
             ]
           },
           {
-            "type": "SYMBOL",
-            "name": "_type_declarator"
+            "type": "FIELD",
+            "name": "declarator",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_type_declarator"
+            }
           },
           {
             "type": "STRING",
@@ -3781,8 +3797,12 @@
             ]
           },
           {
-            "type": "SYMBOL",
-            "name": "_abstract_declarator"
+            "type": "FIELD",
+            "name": "declarator",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_abstract_declarator"
+            }
           },
           {
             "type": "STRING",
@@ -4591,6 +4611,10 @@
           "value": "}"
         }
       ]
+    },
+    "linear_type_specifier": {
+      "type": "STRING",
+      "value": "linear_type"
     },
     "storage_class_specifier": {
       "type": "CHOICE",
@@ -9731,5 +9755,6 @@
     "_field_declarator",
     "_type_declarator",
     "_abstract_declarator"
-  ]
+  ],
+  "reserved": {}
 }
